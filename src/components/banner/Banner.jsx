@@ -19,7 +19,7 @@ const Banner = () => {
               Discover rare collectibles, luxury goods, and vintage <br />{" "}
               treasures in our curated auctions
             </p>
-            <button className="btn btn-xs px-5 py-3 rounded-full">
+            <button className="btn btn-xs px-5 py-3 rounded-full text-xs">
               Explore Auctions
             </button>
           </div>
