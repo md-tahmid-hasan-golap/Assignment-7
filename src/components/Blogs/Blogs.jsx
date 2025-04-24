@@ -47,7 +47,7 @@ const Blogs = () => {
           <h1 className="text-xl font-semibold mt-7 text-center">
             No favorites yet
           </h1>
-          <p className="mt-6 text-center">
+          <p className="mt-6 text-center text-gray-600">
             Click the heart icon on any item <br /> to add it to your favorites
           </p>
 
