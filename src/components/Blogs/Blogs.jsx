@@ -8,13 +8,13 @@ const Blogs = () => {
       .then((res) => res.json())
       .then((data) => setBlogs(data));
   }, []);
-  console.log(blogs);
+
   return (
     <div>
-      <div className="overflow-x-aut">
+      <div className="overflow-x-auto w-[70%]">
         <table className="table">
           {/* head */}
-          <thead className=" text-black">
+          <thead className="text-black">
             <tr>
               <th>
                 <p>Items</p>
@@ -22,13 +22,11 @@ const Blogs = () => {
               <th>Current Bid</th>
               <th>Time Left</th>
               <th>Bid Now</th>
-              <th></th>
             </tr>
           </thead>
-
           <tbody>
             {blogs.map((blog) => (
-              <Blog blog={blog} key={blog.id}></Blog>
+              <Blog key={blog.id} blog={blog}></Blog>
             ))}
           </tbody>
         </table>
